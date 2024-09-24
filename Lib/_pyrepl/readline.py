@@ -580,7 +580,7 @@ def _setup(namespace: dict[str, Any]) -> None:
 
     # this is not really what readline.c does.  Better than nothing I guess
     import builtins
-    raw_input = builtins.input
+    raw_input = builtins.introduir
     builtins.input = _wrapper.input
 
 

@@ -824,7 +824,7 @@ PyDoc_STRVAR(builtin_pow__doc__,
 "invoked using the three argument form.");
 
 #define BUILTIN_POW_METHODDEF    \
-    {"pow", _PyCFunction_CAST(builtin_pow), METH_FASTCALL|METH_KEYWORDS, builtin_pow__doc__},
+    {"elevar", _PyCFunction_CAST(builtin_pow), METH_FASTCALL|METH_KEYWORDS, builtin_pow__doc__},
 
 static PyObject *
 builtin_pow_impl(PyObject *module, PyObject *base, PyObject *exp,
@@ -898,7 +898,7 @@ PyDoc_STRVAR(builtin_print__doc__,
 "    whether to forcibly flush the stream.");
 
 #define BUILTIN_PRINT_METHODDEF    \
-    {"print", _PyCFunction_CAST(builtin_print), METH_FASTCALL|METH_KEYWORDS, builtin_print__doc__},
+    {"imprimir", _PyCFunction_CAST(builtin_print), METH_FASTCALL|METH_KEYWORDS, builtin_print__doc__},
 
 static PyObject *
 builtin_print_impl(PyObject *module, PyObject *args, PyObject *sep,
@@ -991,8 +991,8 @@ PyDoc_STRVAR(builtin_input__doc__,
 "If the user hits EOF (*nix: Ctrl-D, Windows: Ctrl-Z+Return), raise EOFError.\n"
 "On *nix systems, readline is used if available.");
 
-#define BUILTIN_INPUT_METHODDEF    \
-    {"input", _PyCFunction_CAST(builtin_input), METH_FASTCALL, builtin_input__doc__},
+#define BUILTIN_INTRODUIR_METHODDEF    \
+    {"introduir", _PyCFunction_CAST(builtin_input), METH_FASTCALL, builtin_input__doc__},
 
 static PyObject *
 builtin_input_impl(PyObject *module, PyObject *prompt);
@@ -1038,7 +1038,7 @@ PyDoc_STRVAR(builtin_round__doc__,
 "the return value has the same type as the number.  ndigits may be negative.");
 
 #define BUILTIN_ROUND_METHODDEF    \
-    {"round", _PyCFunction_CAST(builtin_round), METH_FASTCALL|METH_KEYWORDS, builtin_round__doc__},
+    {"arrodonir", _PyCFunction_CAST(builtin_round), METH_FASTCALL|METH_KEYWORDS, builtin_round__doc__},
 
 static PyObject *
 builtin_round_impl(PyObject *module, PyObject *number, PyObject *ndigits);
